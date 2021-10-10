@@ -22,7 +22,7 @@
 <nav class="header-navigation"> 
     <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
     <ul class="header-list">
-        <li class="header-item"><a class="header-link-studio" href="./index.html">Cтудия</a></li>
+        <li class="header-item"><a class="header-link-emphasis" href="./index.html">Cтудия</a></li>
         <li class="header-item"><a class="header-link" href="./portfolio.html" >Портфолио</a></li>
         <li class="header-item"><a class="header-link" href="">Контакти</a></li>
     </ul>
@@ -52,7 +52,7 @@
     <section class="hero">
       <div class="container">
 <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
-<button class="hero-btn" type="button">Заказать услугу</button>
+<button class="hero-btn" data-modal-open type="button">Заказать услугу</button>
       </div>
     </section>
 
@@ -108,9 +108,21 @@
     <div class="container">
     <h2 class="job-title">Чем мы занимаемся</h2>
 <ul class="job-list"> 
-<li class="job-list-item"><img class="job-list-image" src="./images/img.jpg" alt="Пишет програму" width="370" height="294"></li>
-<li class="job-list-item"><img class="job-list-image" src="./images/img1.jpg" alt="Адаптирует под телефон" width="370" height="294"></li>
-<li class="job-list-item"><img class="job-list-image" src="./images/img2.jpg" alt="Адаптирует под планшет" width="370" height="294"></li>
+<li class="job-list-item"><img class="job-list-image" src="./images/img.jpg" alt="Пишет програму" width="370" height="294">
+<div class="job-overlay">
+  <p class="job-overlay-text">Десктопные приложения</p>
+</div>
+</li>
+<li class="job-list-item"><img class="job-list-image" src="./images/img1.jpg" alt="Адаптирует под телефон" width="370" height="294">
+<div class="job-overlay">
+  <p class="job-overlay-text">Мобильные приложения</p>
+</div>
+</li>
+<li class="job-list-item"><img class="job-list-image" src="./images/img2.jpg" alt="Адаптирует под планшет" width="370" height="294">
+<div class="job-overlay">
+  <p class="job-overlay-text">Дизайнерские решения</p>
+</div>
+</li>
 </ul>
      </div>
     </section>
@@ -368,6 +380,16 @@
 </div>
 
    </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="button-close" data-modal-close>
+        <svg class="icon-close">
+          <use href="./images/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
   
 </body>
 </html>
